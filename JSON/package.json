@@ -1,0 +1,23 @@
+{
+  "name": "donaldtrumptwitterspellcheckbot",
+  "version": "1.0.0",
+  "description": "A twitter bot that checks the spelling of Donald Trump's tweets",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IanMoritz/TrumpTwitterSpellCheck.git"
+  },
+  "author": "Ian T. Moritz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IanMoritz/TrumpTwitterSpellCheck/issues"
+  },
+  "homepage": "https://github.com/IanMoritz/TrumpTwitterSpellCheck#readme",
+  "dependencies": {
+    "cognitive-services": "^0.1.0",
+    "screenshot-stream": "^4.1.0"
+  }
+}
