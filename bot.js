@@ -13,7 +13,8 @@ var checkedText;
 var stream = T.stream('statuses/filter', { follow: ['25073877', '747793587002183680'] });
 //https://dev.twitter.com/streaming/overview/request-parameters#follow
 stream.on('tweet', function (tweet) {
-  if (tweet.user.id == '25073877' || tweet.user.id == '747793587002183680') {
+  if (tweet.user.id == '25073877') {
+    //if (tweet.user.id == '25073877' || tweet.user.id == '747793587002183680') {
     console.log('He tweeted!')
     var pattern = /\B@[a-z0-9_-]+/gi;
     var usernames = tweet.text.match(pattern);
