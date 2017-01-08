@@ -19,6 +19,7 @@
   "homepage": "https://github.com/IanMoritz/TrumpTwitterSpellCheck#readme",
   "dependencies": {
     "cognitive-services": "^0.1.0",
+    "pageres": "^4.3.0",
     "screenshot-stream": "^4.1.0"
   }
 }

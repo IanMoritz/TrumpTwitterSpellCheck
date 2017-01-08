@@ -4,13 +4,24 @@
     "_type": "SpellCheck",
     "flaggedTokens": [
       {
-        "offset": 4,
-        "token": "errror",
+        "offset": 6,
+        "token": "ian",
         "type": "UnknownToken",
         "suggestions": [
           {
-            "suggestion": "error",
-            "score": 0.890755502188489
+            "suggestion": "Ian",
+            "score": 0
+          }
+        ]
+      },
+      {
+        "offset": 10,
+        "token": "moritz",
+        "type": "UnknownToken",
+        "suggestions": [
+          {
+            "suggestion": "Moritz",
+            "score": 0
           }
         ]
       }
@@ -18,19 +29,19 @@
   },
   "headers": {
     "cache-control": "private, max-age=0",
-    "content-length": "170",
+    "content-length": "263",
     "content-type": "application/json; charset=utf-8",
-    "expires": "Sat, 07 Jan 2017 19:47:06 GMT",
+    "expires": "Sun, 08 Jan 2017 17:42:41 GMT",
     "vary": "Accept-Encoding",
     "p3p": "CP=\"NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND\"",
-    "bingapis-traceid": "9FF3223D36144BB0BC742E5232C3BADB",
-    "x-msedge-clientid": "241F411FCF1764FD0A544B1CCE26655E",
-    "x-msapi-userstate": "9d55",
+    "bingapis-traceid": "ADF38CA81AF74E0298401EDACF56C0A0",
+    "x-msedge-clientid": "01FB219C047F6991327F2B98054E68BF",
+    "x-msapi-userstate": "1e11",
     "bingapis-market": "en-US",
-    "x-msedge-ref": "Ref A: 9FF3223D36144BB0BC742E5232C3BADB Ref B: 2DF56218976D1FA0E8262AE682F4EFF6 Ref C: Sat Jan  7 11:48:07 2017 PST",
-    "apim-request-id": "70a0a40b-78ea-4884-99df-80ee976cc6de",
+    "x-msedge-ref": "Ref A: ADF38CA81AF74E0298401EDACF56C0A0 Ref B: 73CED1BF2DA40F827DFA5BA0199D773A Ref C: Sun Jan  8 09:43:41 2017 PST",
+    "apim-request-id": "6cb6bece-f284-4421-9e20-d9150fdb601a",
     "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
-    "date": "Sat, 07 Jan 2017 19:48:06 GMT",
+    "date": "Sun, 08 Jan 2017 17:43:40 GMT",
     "connection": "close"
   },
   "request": {
@@ -53,7 +64,7 @@
       "Ocp-Apim-Subscription-Key": "bfd148ee868e4cfaa2e7ba7b554a869b",
       "content-type": "application/x-www-form-urlencoded",
       "accept": "application/json",
-      "content-length": 17
+      "content-length": 25
     }
   }
 }

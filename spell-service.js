@@ -25,9 +25,9 @@ exports.getCorrectedText = text => {
                 }
 
                 request.post(requestData, (error, response, body) => {
-                  var fs = require ('fs');    //write JSON 1/3
-                  var json = JSON.stringify(response,null,2);  //write JSON 2/3
-                  fs.writeFile("response.JSON", json);  //write JSON 3/3
+                  // var fs = require ('fs');    //write JSON 1/3
+                  // var json = JSON.stringify(response,null,2);  //write JSON 2/3
+                  // fs.writeFile("response.JSON", json);  //write JSON 3/3
 
                     if (error) {
                         reject(error);

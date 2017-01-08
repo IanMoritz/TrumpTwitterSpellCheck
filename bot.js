@@ -1,3 +1,6 @@
+//Created by Ian T. Moritz
+//Add screenshot function
+
 console.log('The bot is starting');
 
 // Require the modules
@@ -12,12 +15,16 @@ var stream = T.stream('statuses/filter', { follow: ['25073877', '747793587002183
 stream.on('tweet', function (tweet) {
   if (tweet.user.id == '25073877' || tweet.user.id == '747793587002183680') {
     console.log('He tweeted!')
-
+    var pattern = /\B@[a-z0-9_-]+/gi;
+    var usernames = tweet.text.match(pattern);
+    console.log("The usernames are: " + usernames);
+    //Clean below two lines up
+    var text1 = tweet.text.replace(usernames[0]," ")
+    var originalText = text1.replace(usernames[1]," ");
     // var fs = require ('fs');    //write JSON 1/3
     // var json = JSON.stringify(tweet,null,2);  //write JSON 2/3
     // fs.writeFile("tweet.JSON", json);  //write JSON 3/3
 
-    originalText = tweet.text
     console.log("The original text is: " + originalText);
 
     spellService
