@@ -13,17 +13,16 @@ var checkedText;
 var stream = T.stream('statuses/filter', { follow: ['25073877', '747793587002183680'] });
 //https://dev.twitter.com/streaming/overview/request-parameters#follow
 stream.on('tweet', function (tweet) {
-  //if (tweet.user.id == '25073877') {
-  if (tweet.user.id == '747793587002183680' && (typeof(tweet.retweeted_status) === "undefined")) {
+  if (tweet.user.id == '25073877' && (typeof(tweet.retweeted_status) === "undefined")) {
     console.log('He tweeted!')
     var hashtags = new RegExp('#([^\\s]*)','g');
     postText1 = tweet.text.replace(hashtags, '');
     var handles = new RegExp('@([a-zA-Z0-9\_\.]+)','g');
     originalText = postText1.replace(handles, '');
 
-    var fs = require ('fs');    //write JSON 1/3
-    var json = JSON.stringify(tweet,null,2);  //write JSON 2/3
-    fs.writeFile("tweet.JSON", json);  //write JSON 3/3
+    // var fs = require ('fs');    //write JSON 1/3
+    // var json = JSON.stringify(tweet,null,2);  //write JSON 2/3
+    // fs.writeFile("tweet.JSON", json);  //write JSON 3/3
 
     console.log("The original text is: " + originalText);
 
