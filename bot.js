@@ -37,7 +37,7 @@ stream.on('tweet', function (tweet) {
             }
             else {
               newTweet = "✅ " + " https://twitter.com/realDonaldTrump/status/" + tweet.id_str
-              sendIt(newTweet);
+              //sendIt(newTweet);
               console.log("Function choice 1");
             }
         })
