@@ -36,7 +36,7 @@ stream.on('tweet', function (tweet) {
               console.log("Function choice 2");
             }
             else {
-              newTweet = "✅ " + " https://twitter.com/realDonaldTrump/status/" + tweet.id_str
+              //newTweet = "✅ " + " https://twitter.com/realDonaldTrump/status/" + tweet.id_str
               //sendIt(newTweet);
               console.log("Function choice 1");
             }
